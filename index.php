@@ -24,7 +24,7 @@ switch ($page) {
         break;
     case 'articles':
         // TODO: page de détail
-        require "View/articles/articles.php";
+        (new ArticleController())->index();
         break;
     case 'home':
     default:

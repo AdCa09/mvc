@@ -15,11 +15,13 @@ class ArticleController
     // Note: this function can also be used in a repository - the choice is yours
     private function getArticles()
     {
+        global $conn;
+
         try {
             require_once './config/connexionDB.php';
 
             $query = "SELECT * FROM articles";
-            $stmt = $dbh->query($query);
+            $stmt = $conn->query($query);
 
             $rawArticles = [];
 
@@ -30,8 +32,8 @@ class ArticleController
             $articles = [];
             foreach ($rawArticles as $rawArticle) {
                 $articles[] = new Article($rawArticle['title'], $rawArticle['description'], $rawArticle['publish_date']);
-            }
 
+            }
             return $articles;
 
         } catch (PDOException $e) {
