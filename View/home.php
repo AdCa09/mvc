@@ -1,4 +1,4 @@
-<?php require 'View/includes/header.php'?>
+<?php require_once 'View/includes/header.php' ?>
 
 <?php // Use any data loaded in the controller here ?>
 
@@ -8,4 +8,4 @@
     <p>Put your content here.</p>
 </section>
 
-<?php require 'View/includes/footer.php'?>
+<?php require_once 'View/includes/footer.php' ?>
