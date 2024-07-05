@@ -1,0 +1,15 @@
+{
+    "name": "adri/mvc",
+    "autoload": {
+        "psr-4": {
+            "Adri\\Mvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AdCa09",
+            "email": "caufriezadrien0@gmail.com"
+        }
+    ],
+    "require": {}
+}

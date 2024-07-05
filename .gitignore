@@ -3,3 +3,5 @@ apache.conf
 
 php.ini/
 mysql-data/
+
+/vendor/
